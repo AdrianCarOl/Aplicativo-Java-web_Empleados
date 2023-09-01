@@ -33,7 +33,7 @@ public class EmpleadoDaoJDBC {
                 int iden = rs.getInt("iden");
                 String nom = rs.getString("nom");
                 String apell = rs.getString("apell");
-                int tel = rs.getInt("tel");
+                String tel = rs.getString("tel");
                 String direccion = rs.getString("direccion");
                 String fecha_ini = rs.getString("fecha_ini");
 
@@ -56,7 +56,7 @@ public class EmpleadoDaoJDBC {
                 if (rs.next()) {
                     String nom = rs.getString("nom");
                     String apell = rs.getString("apell");
-                    int tel = rs.getInt("tel");
+                    String tel = rs.getString("tel");
                     String direccion = rs.getString("direccion");
                     String fecha_ini = rs.getString("fecha_ini");
                     empleado.setNom(nom);
@@ -82,7 +82,7 @@ public class EmpleadoDaoJDBC {
             stmt.setInt(1, empleado.getIden());
             stmt.setString(2, empleado.getNom());
             stmt.setString(3, empleado.getApell());
-            stmt.setInt(4, empleado.getTel());
+            stmt.setString(4, empleado.getTel());
             stmt.setString(5, empleado.getDireccion());
             stmt.setString(6, empleado.getFecha_ini());
             // Se ejecuta la consulta y se obtiene el número de filas afectadas
@@ -102,7 +102,7 @@ public int actualizar(Empleado empleado) {
         // Se establecen los parámetros de la consulta preparada
         stmt.setString(1, empleado.getNom());
         stmt.setString(2, empleado.getApell());
-        stmt.setInt(3, empleado.getTel());
+        stmt.setString(3, empleado.getTel());
         stmt.setString(4, empleado.getDireccion());
         stmt.setString(5, empleado.getFecha_ini());
 

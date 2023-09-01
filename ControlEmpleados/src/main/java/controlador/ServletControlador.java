@@ -48,7 +48,7 @@ public class ServletControlador extends HttpServlet {
         int iden = Integer.parseInt(request.getParameter("iden"));
         String nom = request.getParameter("nom");
         String apell = request.getParameter("apell");
-        int tel = Integer.parseInt(request.getParameter("tel"));
+        String tel = request.getParameter("tel");
         String direccion = request.getParameter("direccion");
         String fecha_ini = request.getParameter("fecha_ini");
         
@@ -82,7 +82,7 @@ public class ServletControlador extends HttpServlet {
         int iden = Integer.parseInt(request.getParameter("iden"));       
         String nom = request.getParameter("nom");
         String apell = request.getParameter("apell");
-        int tel = Integer.parseInt(request.getParameter("tel"));
+        String tel = request.getParameter("tel");
         String direccion = request.getParameter("direccion");
         String fecha_ini = request.getParameter("fecha_ini");
 

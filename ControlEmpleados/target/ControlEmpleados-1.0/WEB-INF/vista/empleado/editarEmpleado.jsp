@@ -48,7 +48,7 @@
                                                                        
                                     <div class="form-group">
                                         <label for="tel">Telefono</label>
-                                        <input type="tel" class="form-control" name="tel" required value="${empleado.tel}">
+                                        <input type="number" class="form-control" name="tel" required value="${empleado.tel}">
                                     </div>
                                     
                                     <div class="form-group">

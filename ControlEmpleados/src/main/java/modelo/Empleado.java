@@ -8,7 +8,7 @@ public class Empleado {
     private int iden; // Identificacion del Empleado
     private String nom; // Nombre del empleado
     private String apell; // Apellido del empleado
-    private int tel; // Número de teléfono del empleado
+    private String tel; // Número de teléfono del empleado
     private String direccion; // Direccion empleado
     private String fecha_ini; //fecha inicio contrato  
     
@@ -23,7 +23,7 @@ public class Empleado {
     }
 
     // Constructor con todos los parámetros
-    public Empleado(int iden, String nom, String apell, int tel, String direccion, String fecha_ini) {
+    public Empleado(int iden, String nom, String apell, String tel, String direccion, String fecha_ini) {
         this.iden = iden;
         this.nom = nom;
         this.apell = apell;
@@ -33,7 +33,7 @@ public class Empleado {
     }
 
     // Constructor sin identificacion del empleado:
-    public Empleado(String nom, String apell, int tel, String direccion, String fecha_ini) {
+    public Empleado(String nom, String apell, String tel, String direccion, String fecha_ini) {
         
         this.nom = nom;
         this.apell = apell;
@@ -66,11 +66,11 @@ public class Empleado {
         this.apell = apell;
     }
 
-    public int getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(int tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 
